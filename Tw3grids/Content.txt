@@ -1,0 +1,15 @@
+This folder contains collection of 3D grid tables for extracted tw3 distributions.
+
+EACH FILE HAS THE FOLLOWING STRUCTURE:
+x1, x2, x3, value
+
+Grids orders in scale (2GeV, 4GeV, 10GeV, 50GeV, 100GeV)
+Each folder contains collections of replicas in ***.????, where ???? is the number of replica. 0000 corresponds to the central replica.
+
+There are following grids:
+>> T_f= distribution T(x1,x2,x3) for given flavor (u,d,s,c,b)
+>> deltaT_f= distribution \Delta T(x1,x2,x3) for given flavor (u,d,s,c,b)
+>> T_gP= gluon distribution T_g^+(x1,x2,x3)
+>> T_gM= gluon distribution T_g^-(x1,x2,x3)
+>> Cp_f= C-even distribution \mathfrak{S}^+(x1,x2,x3) for given flavor (u,d,s)
+>> Cm_f= C-odd distribution \mathfrak{S}^-(x1,x2,x3) for given flavor (u,d,s)

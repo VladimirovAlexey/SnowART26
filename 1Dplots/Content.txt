@@ -1,0 +1,34 @@
+This folder contains collection of 1D tables used for analyses and plots.
+
+EACH FILE HAS THE FOLLOWING STRUCTURE:
+1st line: list of values of the used kinematic variable (e.g. x, or kT, or Q, etc.)
+2d line: list of values of the function for the mean-value replica (not the mean replica)
+All other lines: lists of values of the function for each replica 
+
+File naming convention:
+f = flavor for quark (u,d,s,c,b) or anti-quark (uB, dB,sB,cB,bB), or gluon (g) or of a hadron (p=proton, n=neutron, d=deutron)
+?GeV = the fixed value of scale, can be 2GeV, 4GeV, 10GeV, 50GeV, 100GeV, and opt (for optimal TMD distributions)
+x?? = the fixed value of x, can be x01 (x=0.1), x02 (x=0.2), x03 (x=0.3), x04 (x=0.4), x005 (x=0.05)
+
+Contains following folders:
+>1Ddist_main: various 1D distributions. Contains following series
+>>>> d2_f.dat = d2 moment vs. Q
+>>>> g2_?GeV_f.dat = g2 structure function vs. x
+>>>> QS_?GeV_f.dat = Qiu-Sterman structure function vs. x
+>>>> wgt_?GeV_f.dat = tw3-part of small-b matchin for wgt TMDPDF vs. x
+
+>1Ddist_dis: same but for fit of DIS data only
+>1Ddist_tmd: same but for fit of TMD data only
+
+>bProfiles: TMD distributions vs. b at fixed Q and x. Contains
+>>>> f1_?GeV_x??_f.dat = unpolarizedTMDPDF
+>>>> f1T_?GeV_x??_f.dat = SiversTMDPDF
+>>>> g1T_?GeV_x??_f.dat = wgtTMDPDF
+
+>bProfiles_dis: same as bProfiles but for fit of DIS only
+>bProfiles_tmd: same as bProfiles but for fit of TMD only
+>b2Profiles: same as bProfiles but with additional uncertainty for lambda (in fNP)
+>kProfiles: same as bProfiles but vs kT
+>k2Profiles: same as b2Profiles but vs kT
+>xProfiles: same as kProfiles but vs x (at fixed kT)
+

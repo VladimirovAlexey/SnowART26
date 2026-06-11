@@ -1,0 +1,5 @@
+This folder contains collection of 3D grid table for the tw3 distributions. The format is like in pavia grids.
+
+Contains grid for Sivers and WGT function as functions of b, kT, for different scales and optimal one.
+
+The grids are too large to be stored in Github (complete (x,b,Q) table for 300 replicas ~2.3 Gb). If you need them please contact me, Alexey Vladimirov, vladimirov.aleksey@gmail.com 
